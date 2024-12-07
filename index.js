@@ -23,6 +23,8 @@ function initGame() {
     boxes.forEach((box,index)=>{
         box.innerText = "";
         box.classList = `box box${index+1}`;
+        box.style.pointerEvents = "auto";
+
     })
     newGameBtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
